@@ -3,21 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>23rd Birthday</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="css/images/logo.png">
 </head>
 
 <body>
-    <!-- Developed by GrabCharles -->
-    
 
-    <audio id="bgMusic" src="css/sounds/aya.mp3" loop></audio>
+    <!-- Developed by GrabCharles -->
+
+    <audio id="bgMusic" src="css/sounds/birthday_song.mp3" loop></audio>
+
+    <!-- LANDING PAGE -->
+    <div id="landingPage" class="landing-page">
+        <div class="gift-box" id="giftBox">
+            <div class="gift-lid"></div>
+            <div class="gift-body">
+                <div class="gift-ribbon-h"></div>
+                <div class="gift-ribbon-v"></div>
+                <div class="gift-bow">
+                    <div class="bow-left"></div>
+                    <div class="bow-right"></div>
+                    <div class="bow-center"></div>
+                </div>
+            </div>
+            <p class="gift-hint">Click me! 🎀</p>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY PAGE -->
+    <div id="birthdayPage" class="birthday-page hidden">
+
+        <!-- Falling petals -->
+        <div id="petals" class="petals-container"></div>
+
+        <!-- Sparkles -->
+        <div id="sparkles" class="sparkles-container"></div>
+
+        <div class="birthday-content">
+            <h1 class="birthday-title">Happy 23rd Birthday!</h1>
+            <p class="birthday-subtitle">Make a wish and click a candle 🕯️</p>
+
+            <!-- Cake -->
+            <div class="cake-wrapper">
+                <div class="cake">
+                    <!-- Candles rendered by JS -->
+                    <div class="candles-row" id="candlesRow"></div>
+                    <div class="cake-tier cake-top">
+                        <div class="cake-decoration">🌸 🎀 🌸</div>
+                    </div>
+                    <div class="cake-tier cake-middle">
+                        <div class="cake-decoration">✨ Happy Birthday ✨</div>
+                    </div>
+                    <div class="cake-tier cake-bottom">
+                        <div class="cake-decoration">💕 My Pretty Nurse Iah 💕</div>
+                    </div>
+                    <div class="cake-plate"></div>
+                </div>
+            </div>
+
+            <p class="birthday-msg">Each candle holds a special message just for you 💌</p>
+        </div>
+    </div>
+
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="modal-overlay hidden">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-hearts">💗</div>
+            <h2 class="modal-title">A Message For You 💌</h2>
+            <div class="video-wrapper">
+                <video id="modalVideo" controls playsinline>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
