@@ -7,11 +7,19 @@
 // Add as many video paths as you receive!
 // The candles will auto-adjust to match this array.
 const GREETING_VIDEOS = [
-    'css/videos/default.mp4',
-    'css/videos/default.mp4',
-    'css/videos/default.mp4',
-    'css/videos/default.mp4',
-    'css/videos/default.mp4',
+    'css/videos/1.mp4',
+    'css/videos/2.mp4',
+    'css/videos/3.mp4',
+    'css/videos/4.mp4',
+    'css/videos/5.mp4',
+    'css/videos/6.mp4',
+    'css/videos/7.mp4',
+    'css/videos/8.mp4',
+    'css/videos/9.mp4',
+    'css/videos/10.mp4',
+    'css/videos/11.mp4',
+    'css/videos/12.mp4',
+    'css/videos/13.mp4',
 ];
 
 // Candle colors (cycles if more candles than colors)
